@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AddItemActivity" android:id="@+id/coordinatorLayout2">
+
+    <TextView
+            android:text="Enter Food Name:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:id="@+id/enterFood" app:layout_constraintTop_toTopOf="parent" android:layout_marginTop="118dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="110dp"
+            android:layout_marginStart="110dp" android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/enterFoodNameTextView" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="110dp" android:layout_marginRight="110dp"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="ex: Banana"
+            android:ems="10"
+            android:id="@+id/enterFoodNameTextView"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="99dp"
+            android:layout_marginStart="99dp" android:layout_marginBottom="60dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView4" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="99dp" android:layout_marginRight="99dp" android:layout_marginTop="7dp"
+            app:layout_constraintTop_toBottomOf="@+id/enterFood"/>
+    <TextView
+            android:text="Enter Amount of Calories:"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4" android:textSize="24sp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="69dp"
+            android:layout_marginStart="69dp" android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/enterNumCaloriesTextView" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="69dp" android:layout_marginRight="69dp" android:layout_marginTop="60dp"
+            app:layout_constraintTop_toBottomOf="@+id/enterFoodNameTextView"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:id="@+id/enterNumCaloriesTextView" android:layout_marginTop="17dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="99dp" android:layout_marginStart="99dp" android:layout_marginBottom="100dp"
+            app:layout_constraintBottom_toTopOf="@+id/button" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="99dp" android:layout_marginRight="99dp"/>
+    <Button
+            android:text="submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button" app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="161dp"
+            android:layout_marginStart="161dp" app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="167dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="162dp" android:layout_marginRight="162dp" android:layout_marginTop="100dp"
+            app:layout_constraintTop_toBottomOf="@+id/enterNumCaloriesTextView"/>
+
+</android.support.constraint.ConstraintLayout>
